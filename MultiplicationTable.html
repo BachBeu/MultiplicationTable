@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+        let mul;
+        mul = "<table style='border: solid black 1px' ;  width='600px' ; cellspacing='0';  cellpadding='3'>";
+        for (let i = 1; i <= 9; i++) {
+            mul = mul +  "<tr>";
+            for (let j = 2; j <= 9; j++) {
+                var result = i*j;
+                mul = mul + "<td>" + j + "x" + i +"="+ result + "</td>"  ;
+            }
+            mul = mul + "</tr>";
+        }
+        mul = mul + "</table>";
+        document.write(mul);
+</script>
+</body>
+</html>
